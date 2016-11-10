@@ -50,7 +50,7 @@ class Noirepay
         $data = "SECURITY.SENDER=".$merchantProcessor->sender .
             "&TRANSACTION.CHANNEL=". $merchantProcessor->channel .
             "&TRANSACTION.MODE=".($merchant->live_mode ? "LIVE" : "INTEGRATOR_TEST") .
-            "&RECURRENCE.MODE = INITIAL".
+            "&RECURRENCE.MODE=INITIAL".
             "&TRANSACTION.RESPONSE=SYNC".
             "&USER.LOGIN=". $merchantProcessor->login .
             "&IDENTIFICATION.TRANSACTIONID=".UUID::trxid(9).
@@ -214,7 +214,7 @@ class Noirepay
             "&TRANSACTION.CHANNEL=". $merchantProcessor->channel .
             "&TRANSACTION.MODE=".($merchant->live_mode ? "LIVE" : "INTEGRATOR_TEST") .
             "&TRANSACTION.RESPONSE=SYNC".
-            "&RECURRENCE.MODE = INITIAL".
+            "&RECURRENCE.MODE=INITIAL".
             "&USER.LOGIN=". $merchantProcessor->login .
             "&IDENTIFICATION.TRANSACTIONID=".UUID::trxid(9).
             "&USER.PWD=". $merchantProcessor->password .
