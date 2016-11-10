@@ -38,7 +38,7 @@ class Api extends REST {
                 $res['ReferenceId'] = $response['ReferenceId'];
             }
 
-            $res['Cdc'] = $response['Cdc'];
+//            $res['Cdc'] = $response['Cdc'];
 
             $this->response($this->json($res), $status);
 
