@@ -66,10 +66,6 @@ class Noirepay
             "&ACCOUNT.EXPIRY_YEAR=".$params['cardExpiryYear'].
             "&ACCOUNT.VERIFICATION=".$params['cardCvv'];
 
-        parse_str($data,$postdata);
-
-        print_r($postdata);die();
-
         $param = array('http' => array(
             'method' => 'POST',
             'content' => $data
