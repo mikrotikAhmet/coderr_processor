@@ -51,7 +51,6 @@ class Noirepay
             "&TRANSACTION.CHANNEL=". $merchantProcessor->channel .
             "&TRANSACTION.MODE=".($merchant->live_mode ? "LIVE" : "INTEGRATOR_TEST") .
             "&TRANSACTION.RESPONSE=SYNC".
-            "&SECRET = p9wdHSCSTZbKSJtA".
             "&USER.LOGIN=". $merchantProcessor->login .
             "&IDENTIFICATION.TRANSACTIONID=".UUID::trxid(9).
             "&USER.PWD=". $merchantProcessor->password .
