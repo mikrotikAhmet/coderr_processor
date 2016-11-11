@@ -59,7 +59,7 @@ class Noirepay
             "&PRESENTATION.AMOUNT=". $amount .
             "&PRESENTATION.CURRENCY=". get_client_default_currency($merchant->userid).
             "&PRESENTATION.USAGE=". $params['trackingMemberCode'] .
-            "&CONTACT.IP=".$_SERVER['REMOTE_ADDR'].
+//            "&CONTACT.IP=".$_SERVER['REMOTE_ADDR'].
             "&CUST.CNTRY.CD=".$params['countryId'].
 //            "&CUST.EMAIL=ahmet.gudenoglu@gmail.com".
 //            "&CUST.HOME.PHONE=656728972".
