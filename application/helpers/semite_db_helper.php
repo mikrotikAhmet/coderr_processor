@@ -25,7 +25,7 @@ function addTransaction($params,$response,$merchant,$method,$processor){
         'amount'=>money_format("%!^i",$params['amount']),
         'trackingcode'=>$params['trackingMemberCode'],
         'currency'=>$params['currencyId'],
-        'interchange'=>money_format("%!^i",$Currency->getValue(get_client_default_currency($merchant->userid))),
+        'interchange'=>money_format("%!^i",$Currency->getValue($params['currencyId'])),
         'settlement'=>money_format("%!^i",$Currency->convert(money_format("%!^i",$params['amount']),$params['currencyId'],get_client_default_currency($merchant->userid))),
         'method'=>ucfirst($method),
     );

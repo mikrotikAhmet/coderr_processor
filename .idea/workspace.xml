@@ -22,10 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Noirepay.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Noirepay.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/libraries/processors/Noirepay.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49626467">
+            <state vertical-scroll-proportion="-19.375">
               <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
@@ -45,15 +45,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="semite_db_helper.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="semite_db_helper.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/helpers/semite_db_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.0">
-              <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
+            <state vertical-scroll-proportion="0.35218784">
+              <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
               <folding>
-                <marker date="1478861006973" expanded="true" signature="3121:3210" placeholder="UPDATE tbltr..." />
-                <marker date="1478861006973" expanded="true" signature="3384:3473" placeholder="UPDATE tbltr..." />
-                <marker date="1478861006973" expanded="true" signature="3642:3729" placeholder="UPDATE tbltr..." />
+                <marker date="1478862539862" expanded="true" signature="3096:3185" placeholder="UPDATE tbltr..." />
+                <marker date="1478862539862" expanded="true" signature="3359:3448" placeholder="UPDATE tbltr..." />
+                <marker date="1478862539862" expanded="true" signature="3617:3704" placeholder="UPDATE tbltr..." />
               </folding>
             </state>
           </provider>
@@ -98,11 +98,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/application/helpers/semite_db_helper.php" />
         <option value="$PROJECT_DIR$/application/libraries/Api.php" />
         <option value="$PROJECT_DIR$/application/libraries/Rest.php" />
         <option value="$PROJECT_DIR$/application/controllers/gatewayv2/Service.php" />
         <option value="$PROJECT_DIR$/application/libraries/processors/Noirepay.php" />
+        <option value="$PROJECT_DIR$/application/helpers/semite_db_helper.php" />
       </list>
     </option>
   </component>
@@ -322,23 +322,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/helpers/semite_db_helper.php">
+    <entry file="file://$PROJECT_DIR$/application/libraries/processors/Noirepay.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.0">
-          <caret line="103" column="9" selection-start-line="103" selection-start-column="9" selection-end-line="103" selection-end-column="9" />
-          <folding>
-            <marker date="1478861006973" expanded="true" signature="3121:3210" placeholder="UPDATE tbltr..." />
-            <marker date="1478861006973" expanded="true" signature="3384:3473" placeholder="UPDATE tbltr..." />
-            <marker date="1478861006973" expanded="true" signature="3642:3729" placeholder="UPDATE tbltr..." />
-          </folding>
+        <state vertical-scroll-proportion="-19.375">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/libraries/processors/Noirepay.php">
+    <entry file="file://$PROJECT_DIR$/application/helpers/semite_db_helper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49626467">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.35218784">
+          <caret line="27" column="84" selection-start-line="27" selection-start-column="84" selection-end-line="27" selection-end-column="84" />
+          <folding>
+            <marker date="1478862539862" expanded="true" signature="3096:3185" placeholder="UPDATE tbltr..." />
+            <marker date="1478862539862" expanded="true" signature="3359:3448" placeholder="UPDATE tbltr..." />
+            <marker date="1478862539862" expanded="true" signature="3617:3704" placeholder="UPDATE tbltr..." />
+          </folding>
         </state>
       </provider>
     </entry>
