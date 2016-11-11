@@ -59,6 +59,7 @@ class Noirepay
             "&PRESENTATION.AMOUNT=". $amount .
             "&PRESENTATION.CURRENCY=". get_client_default_currency($merchant->userid).
             "&PRESENTATION.USAGE=". $params['trackingMemberCode'] .
+            "&ADDRESS.COUNTRY=GB".
             "&ACCOUNT.HOLDER=". ((isset($params['cardholder']) && !empty($params['cardholder']) ? $params['cardholder'] : NULL)).
             "&ACCOUNT.NUMBER=".$params['cardNumber'].
             "&ACCOUNT.BRAND=". strtoupper($cardInfo['type']).
@@ -222,6 +223,7 @@ class Noirepay
             "&PRESENTATION.AMOUNT=". $amount .
             "&PRESENTATION.CURRENCY=". get_client_default_currency($merchant->userid).
             "&PRESENTATION.USAGE=". $params['trackingMemberCode'] .
+            "&ADDRESS.COUNTRY=GB".
             "&ACCOUNT.HOLDER=". ((isset($params['cardholder']) && !empty($params['cardholder']) ? $params['cardholder'] : NULL)).
             "&ACCOUNT.NUMBER=".$params['cardNumber'].
             "&ACCOUNT.BRAND=". strtoupper($cardInfo['type']).
