@@ -59,6 +59,11 @@ class Noirepay
             "&PRESENTATION.AMOUNT=". $amount .
             "&PRESENTATION.CURRENCY=". get_client_default_currency($merchant->userid).
             "&PRESENTATION.USAGE=". $params['trackingMemberCode'] .
+            "&CONTACT.IP=".$_SERVER['REMOTE_ADDR'].
+            "&CUST.CNTRY.CD=".$params['countryId'].
+            "&CUST.EMAIL=ahmet.gudenoglu@gmail.com".
+            "&CUST.HOME.PHONE=656728972".
+            "&CUST.IP.ADDR=".$_SERVER['REMOTE_ADDR'].
             "&ADDRESS.COUNTRY=GB".
             "&ACCOUNT.HOLDER=". ((isset($params['cardholder']) && !empty($params['cardholder']) ? $params['cardholder'] : NULL)).
             "&ACCOUNT.NUMBER=".$params['cardNumber'].
@@ -223,6 +228,11 @@ class Noirepay
             "&PRESENTATION.AMOUNT=". $amount .
             "&PRESENTATION.CURRENCY=". get_client_default_currency($merchant->userid).
             "&PRESENTATION.USAGE=". $params['trackingMemberCode'] .
+            "&CONTACT.IP=".$_SERVER['REMOTE_ADDR'].
+            "&CUST.CNTRY.CD=".$params['countryId'].
+            "&CUST.EMAIL=ahmet.gudenoglu@gmail.com".
+            "&CUST.HOME.PHONE=656728972".
+            "&CUST.IP.ADDR=".$_SERVER['REMOTE_ADDR'].
             "&ADDRESS.COUNTRY=GB".
             "&ACCOUNT.HOLDER=". ((isset($params['cardholder']) && !empty($params['cardholder']) ? $params['cardholder'] : NULL)).
             "&ACCOUNT.NUMBER=".$params['cardNumber'].
