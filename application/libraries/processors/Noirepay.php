@@ -63,7 +63,7 @@ class Noirepay
             "&CUST.CNTRY.CD=".$params['countryId'].
             "&CUST.EMAIL=ahmet.gudenoglu@gmail.com".
             "&CUST.HOME.PHONE=656728972".
-            "&CUST.IP.ADDR=".$_SERVER['REMOTE_ADDR'].
+            "&CUST.IP.ADDR=109.203.109.19".
             "&ADDRESS.COUNTRY=GB".
             "&ACCOUNT.HOLDER=". ((isset($params['cardholder']) && !empty($params['cardholder']) ? $params['cardholder'] : NULL)).
             "&ACCOUNT.NUMBER=".$params['cardNumber'].
@@ -232,7 +232,7 @@ class Noirepay
             "&CUST.CNTRY.CD=".$params['countryId'].
             "&CUST.EMAIL=ahmet.gudenoglu@gmail.com".
             "&CUST.HOME.PHONE=656728972".
-            "&CUST.IP.ADDR=".$_SERVER['REMOTE_ADDR'].
+            "&CUST.IP.ADDR=109.203.109.19".
             "&ADDRESS.COUNTRY=GB".
             "&ACCOUNT.HOLDER=". ((isset($params['cardholder']) && !empty($params['cardholder']) ? $params['cardholder'] : NULL)).
             "&ACCOUNT.NUMBER=".$params['cardNumber'].
