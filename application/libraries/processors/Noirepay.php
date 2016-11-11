@@ -35,7 +35,7 @@ class Noirepay
 
         $merchantProcessor = json_decode($merchantProcessorData->processor_data);
 
-        $amount = money_format("%!^i",$Currency->convert(money_format("%!^i",$params['amount']),$params['currencyId'],get_client_default_currency($merchant->userid)));
+        $amount = money_format("%!^i",$Currency->convert($params['amount'],$params['currencyId'],get_client_default_currency($merchant->userid)));
 
         $this->cc_validator->validate($params['cardNumber']);
 

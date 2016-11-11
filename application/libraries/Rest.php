@@ -82,7 +82,9 @@ class REST {
             2005 =>'Your account is not allowed to process this card type.',
             2006 =>'Amount is not valid.',
             2007 =>'Card number is not valid.',
-            2008 =>'Faild to complete the operation. Transaction could not be found. Please chack your information provided and try again'
+            2008 =>'Faild to complete the operation. Transaction could not be found. Please chack your information provided and try again',
+            2009 =>'Currency Id seems not valid',
+            2010 =>'Country Id seems not valid.',
         );
         return ($status[$this->_code]) ? $status[$this->_code] : $status[90];
     }

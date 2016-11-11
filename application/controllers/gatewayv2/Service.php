@@ -238,6 +238,14 @@ class Service extends CI_Controller {
             }
         }
 
+        if ( strval($params['countryId']) == strval(intval($params['countryId'])) ) {
+            $this->_api->processApi(array(), 2010, true);
+        }
+
+        if ( strval($params['currencyId']) == strval(intval($params['currencyId'])) ) {
+            $this->_api->processApi(array(), 2009, true);
+        }
+
         // Check allowed card types
         $this->cardValidator->Validate($params['cardNumber']);
         $cardInfo = $this->cardValidator->GetCardInfo();
