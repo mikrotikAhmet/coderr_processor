@@ -34,6 +34,7 @@ class Oculus
         $Currency = new Currency();
 
         $this->ci->db->where('merchantid',$merchant->id);
+        $this->ci->db->where('active',1);
         $merchantProcessorData = $this->ci->db->get('tblmerchantprocessors')->row();
 
         $merchantProcessor = json_decode($merchantProcessorData->processor_data);
@@ -133,6 +134,7 @@ class Oculus
         $Currency = new Currency();
 
         $this->ci->db->where('merchantid',$merchant->id);
+        $this->ci->db->where('active',1);
         $merchantProcessorData = $this->ci->db->get('tblmerchantprocessors')->row();
 
         $merchantProcessor = json_decode($merchantProcessorData->processor_data);
@@ -232,6 +234,7 @@ class Oculus
         $Currency = new Currency();
 
         $this->ci->db->where('merchantid', $merchant->id);
+        $this->ci->db->where('active',1);
         $merchantProcessorData = $this->ci->db->get('tblmerchantprocessors')->row();
 
         $merchantProcessor = json_decode($merchantProcessorData->processor_data);
@@ -330,6 +333,7 @@ class Oculus
         $Currency = new Currency();
 
         $this->ci->db->where('merchantid',$merchant->id);
+        $this->ci->db->where('active',1);
         $merchantProcessorData = $this->ci->db->get('tblmerchantprocessors')->row();
 
         $merchantProcessor = json_decode($merchantProcessorData->processor_data);
@@ -428,6 +432,7 @@ class Oculus
         $Currency = new Currency();
 
         $this->ci->db->where('merchantid',$merchant->id);
+        $this->ci->db->where('active',1);
         $merchantProcessorData = $this->ci->db->get('tblmerchantprocessors')->row();
 
         $merchantProcessor = json_decode($merchantProcessorData->processor_data);

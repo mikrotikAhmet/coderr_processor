@@ -24,6 +24,8 @@ class Service extends CI_Controller {
 
         $this->load->library('arraytoxml');
 
+        $this->load->library('mpi/endeavour');
+
         $this->arraytoxml = new ArrayToXML();
         $this->_api = new Api();
         $this->cardValidator = new CreditCardValidator();
@@ -61,11 +63,11 @@ class Service extends CI_Controller {
         }
 
         // Get merchant processor object
-        $sql = "SELECT * FROM tblmerchantprocessors mp LEFT JOIN tblprocessors p ON(mp.processorid = p.id) WHERE merchantid = '".(int) $merchant->id."'";
+        $sql = "SELECT * FROM tblmerchantprocessors mp LEFT JOIN tblprocessors p ON(mp.processorid = p.id) WHERE mp.merchantid = '".(int) $merchant->id."' AND mp.active = '1'";
 
         $merchantProcessor = $this->db->query($sql)->row();
 
-        if (!$merchantProcessor->active){
+        if (!$merchantProcessor){
 
             $this->_api->processApi($this->_response, 2002,true);
         }
@@ -266,6 +268,31 @@ class Service extends CI_Controller {
         if ($cardInfo['status'] !="valid"){
             $this->_api->processApi(array(), 2007,true);
         }
+    }
+
+    public function CheckEnrollment($params,$merchant){
+
+        // Get merchant processor object
+        $sql = "SELECT * FROM tblmerchantprocessors mp LEFT JOIN tblprocessors p ON(mp.processorid = p.id) WHERE mp.merchantid = '".(int) $merchant->id."' AND mp.active = '1'";
+
+        $merchantProcessor = $this->db->query($sql)->row();
+
+        $processorData = json_decode($merchantProcessor->processor_data);
+
+        $objDateTime = new DateTime('NOW');
+
+        $Endeavour = new Endeavour();
+
+        if ($merchant->live_mode && $processorData->secure && !empty($processorData->secure_id)) {
+
+            $Endeavour->setMID($processorData->secure_id);
+        }
+
+        $lookupResponse = $Endeavour->MPILookup($params);
+
+        echo json_encode($lookupResponse);
+        die();
+
     }
 
 }
